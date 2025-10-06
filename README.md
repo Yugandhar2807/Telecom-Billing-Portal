@@ -87,7 +87,7 @@ telecom-billing-portal/
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/Yugandhar2807/Telecom-Billing-Portal?tab=readme-ov-file>
    cd telecom-billing-portal
    ```
 
