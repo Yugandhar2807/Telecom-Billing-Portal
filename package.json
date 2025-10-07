@@ -1,0 +1,50 @@
+{
+  "name": "telecom-billing-portal",
+  "version": "1.0.0",
+  "description": "Customer Billing & Transparency Portal for telecom customers",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-deps": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "codespaces": "npm run install-deps && npm run dev",
+    "setup": "echo 'Setting up for Codespaces...' && npm run codespaces"
+  },
+  "keywords": [
+    "telecom",
+    "billing",
+    "transparency",
+    "customer-portal",
+    "react",
+    "nodejs",
+    "mysql"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "bcryptjs": "^3.0.2",
+    "concurrently": "^7.6.0",
+    "kill-port": "^2.0.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:8000"
+}
